@@ -1,0 +1,97 @@
+header{
+    background-color:#f8d8dd ;
+    padding: 20px 0;
+}
+.box{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 50%;
+}
+
+nav{
+    position: absolute;
+    top: 250px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase; /*text-transform es la responsable de la transformación del texto a mayúscula, cuando usamos el valor uppercase*/
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:red;
+}
+/*position: absolute, yo puedo posicionar mi elemento en cualquier lugar de la página.*/
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* se adapta la caja al espacio */
+    border: 2px solid black;/*border-style: solid: lineas rectas // dashed; bordes con guiones // dotted: bordes con puntos*/
+    border-radius: 10px;
+}
+
+.productos li:hover{ /*hover, cuando el usuario pasa el cursor sobre el elemento.*/
+    border-color: blueviolet;
+}
+
+.productos li:active{ /*active, cuando un elemento está siendo activado por el usuario.*/
+    border-color: pink;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 18px;
+}
+
+.img{
+    height: auto;
+    width: 100%;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: pink ;
+    padding: 40px;
+}
+
+.copyright{
+    color: black;
+    font-size: 13px;
+    margin: 20px;
+}
