@@ -5,35 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 class="titulo-principal">
-            Heladería Iceberg
-        </h1>
+        <div class="box">
+            <div class="logo"><h1><img src="img/logo.png" alt=""></h1></div>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="productos.html">Products</a></li>
+                    <li> <a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <img id="banner" src="img/portada.jpg" alt="portada principal">
+    <img class="banner" src="img/portada.jpg" alt="portada principal">
     
-    <div class="principal">
-        <h2 class="titulo-centralizado">Iceberg</h2>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-    </div>
-    
-    <div class="diferenciales">
-        <h3 class="titulo-centralizado">Diferenciales</h3>
-        <ul>
-            <li class="items">Multiples sabores</li>
-            <li class="items">Atención personalizada </li>
-            <li class="items">Localización</li>
-        </ul>
+    <main>
+        <section class="principal">
+            <h2 class="titulo-principal">Iceberg</h2>
 
-        <img class="imgDiferencial"  src="img/icecream.jpg" alt="helados">
-    </div>
-    
+            <img class="tienda" src="img/icecreamshop.jpg" alt="tienda de helados">
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        </section>
+        
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra ubicación </h3>
+            <p>Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+            <div class="mapa-contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13317.275608066313!2d-70.64912879218747!3d-33.440997200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sheladeria!5e0!3m2!1ses!2scl!4v1674230971647!5m2!1ses!2scl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="diferenciales">
+            <h3 class="titulo-principal">Diferenciales</h3>
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales">
+                    <li class="items">Multiples sabores</li>
+                    <li class="items">Atención personalizada </li>
+                    <li class="items">Localización</li>
+                </ul><img class="imagen-diferenciales"  src="img/icecream.jpg" alt="helados">
+            </div>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/UjhCDyklWJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="">
+        <p class="copyright">&copy Copyright Heladería Iceberg 2023</p>
+    </footer>
 </body>
 </html>
